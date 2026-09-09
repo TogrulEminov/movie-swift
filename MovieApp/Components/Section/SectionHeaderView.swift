@@ -1,10 +1,3 @@
-//
-//  SectionHeaderView.swift
-//  MovieApp
-//
-//  Created by Eminov Togrul Punhan on 04.09.26.
-//
-
 import SwiftUI
 
 struct SectionHeaderView: View {

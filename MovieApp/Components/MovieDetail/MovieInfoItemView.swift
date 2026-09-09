@@ -1,10 +1,3 @@
-//
-//  MovieInfoItemView.swift
-//  MovieApp
-//
-//  Created by Eminov Togrul Punhan on 08.09.26.
-//
-
 import SwiftUI
 
 struct MovieInfoItemView: View {

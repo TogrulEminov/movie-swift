@@ -1,10 +1,3 @@
-//
-//  ErrorStateView.swift
-//  MovieApp
-//
-//  Created by Eminov Togrul Punhan on 04.09.26.
-//
-
 import SwiftUI
 
 struct ErrorStateView: View {
@@ -21,7 +14,7 @@ struct ErrorStateView: View {
         } actions: {
             Button("Try again") {
                 Task {
-                    await retryAction
+                    await retryAction()
                 }
             }.buttonStyle(.borderedProminent)
         }

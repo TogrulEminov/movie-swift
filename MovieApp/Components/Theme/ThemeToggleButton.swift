@@ -1,9 +1,3 @@
-//
-//  ThemeToggleButton.swift
-//  MovieApp
-//
-//  Created by Eminov Togrul Punhan on 09.09.26.
-//
 import SwiftUI
 
 struct ThemeToggleButton: View {
