@@ -1,0 +1,91 @@
+
+# Xcode user-specific settings
+
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# Xcode build products
+
+build/
+Build/
+DerivedData/
+
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.app.dSYM
+
+# Swift Package Manager
+
+.build/
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.swiftpm/xcode/xcuserdata/
+
+# CocoaPods
+
+Pods/
+
+# Carthage
+
+Carthage/Build/
+
+# fastlane generated files
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# Code coverage and test results
+
+*.profraw
+*.profdata
+coverage/
+TestResults/
+
+# Playgrounds
+
+timeline.xctimeline
+playground.xcworkspace
+
+# macOS system files
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary files
+
+*.tmp
+*.temp
+*.log
+
+# Local environment files
+
+.env
+.env.*
+!.env.example
+
+# Secrets and API configuration
+
+**/Core/Configuration/APIConfig.swift
+**/Config/APIConfig.swift
+**/Config/Secrets.xcconfig
+
+# Keep shareable example files
+
+!**/Core/Configuration/APIConfig.example.swift
+!**/Config/APIConfig.example.swift
+!**/Config/Secrets.example.xcconfig
