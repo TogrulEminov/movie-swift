@@ -68,7 +68,7 @@ extension MainTabView {
 extension MainTabView {
 
     @ViewBuilder
-    fileprivate func destination(
+    private func destination(
         for route: AppRoute
     ) -> some View {
         switch route {

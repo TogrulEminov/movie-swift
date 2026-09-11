@@ -17,33 +17,6 @@ struct HomeView: View {
             )
         )
     }
-    private var homeContent: some View {
-        ScrollView {
-            LazyVStack(spacing: 30) {
-                movieSection(
-                    category: .popular,
-                    movies: viewModel.popularMovies
-                )
-                movieSection(
-                    category: .topRated,
-                    movies: viewModel.topRatedMovies
-                )
-                movieSection(
-                    category: .nowPlaying,
-                    movies: viewModel.nowPlayingMovies
-                )
-                movieSection(
-                    category: .upcoming,
-                    movies: viewModel.upcomingMovies
-                )
-            }
-
-        }
-        .refreshable {
-            await viewModel.refreshMovies()
-        }
-        .background(AppColors.background)
-    }
 
     var body: some View {
         Group {
@@ -74,6 +47,37 @@ struct HomeView: View {
 
     }
 
+}
+extension HomeView {
+    private var homeContent: some View {
+        ScrollView {
+            LazyVStack(spacing: 30) {
+                movieSection(
+                    category: .popular,
+                    movies: viewModel.popularMovies
+                )
+                movieSection(
+                    category: .topRated,
+                    movies: viewModel.topRatedMovies
+                )
+                movieSection(
+                    category: .nowPlaying,
+                    movies: viewModel.nowPlayingMovies
+                )
+                movieSection(
+                    category: .upcoming,
+                    movies: viewModel.upcomingMovies
+                )
+            }
+
+        }
+        .refreshable {
+            await viewModel.refreshMovies()
+        }
+        .background(AppColors.background)
+    }
+}
+extension HomeView {
     private func movieSection(category: MovieCategory, movies: [Movie])
         -> some View
     {
